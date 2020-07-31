@@ -1,0 +1,255 @@
+ body{
+     background:rgb(191, 216, 243) ;
+ }
+
+ /* Création de Fenetre */
+
+ .css{
+     border: 20px solid rgb(20, 10, 46);
+     position: relative;
+     height: 400px;
+     width: 400px;
+     overflow: hidden;
+     margin: 70px auto;
+     background: #6ccbeb ;
+ }
+
+ .css:hover{
+     background-color: rgb(3, 1, 61);
+ }
+ .css:hover #soleil{
+     background-color: #dbe7eb;
+ }
+.css:hover .nuage{
+    background-color: transparent;
+}
+.css:hover .nuage:before{
+    background-color: transparent;
+}
+.css:hover .nuage:after{
+    background-color: transparent;
+}
+
+
+.etoile1{
+    color: transparent;
+    position: absolute;
+    font-size: 18px;
+    top: 150px;
+    left: 150px;
+}
+.etoile2{
+    color: transparent;
+    position: absolute;
+    font-size: 20px;
+    top: 100px;
+    left: 350px;
+}
+.etoile3{
+    color: transparent;
+    position: absolute;
+    font-size: 20px;
+    top: 120px;
+    left: 40px;
+}
+.etoile4{
+    color: transparent;
+    position: absolute;
+    font-size: 22px;
+    top: 100px;
+    left: 200px;
+}
+.etoile5{
+    color: transparent;
+    position: absolute;
+    font-size: 17px;
+    top: 40px;
+    left: 70px;
+}
+.etoile6{
+    color: transparent;
+    position: absolute;
+    font-size: 21px;
+    top: 160px;
+    left: 280px;
+}
+
+.css:hover .etoile1{
+   color: cornsilk;
+}
+.css:hover .etoile2{
+    color: cornsilk;
+}
+.css:hover .etoile3{
+    color: cornsilk;
+}
+.css:hover .etoile4{
+    color: cornsilk;
+}
+.css:hover .etoile5{
+    color: cornsilk;
+}
+.css:hover .etoile6{
+    color: cornsilk;
+}
+
+ /* Création de Soleil */
+
+ #soleil{
+     color: transparent;
+     position: absolute;
+     display: inline-block;
+     background: #fff316;
+     width: 100px;
+     height: 100px;
+     border-radius: 50px;
+     top: -17px;
+     right: 45px;
+ }
+
+ /* Création des Oiseaux */
+
+ .oiseaux /* Redimensionner les images */  {
+     width: 40px;
+     height: 40px;
+ }
+
+ .oiseau{
+    position: relative;
+    display: inline-block;
+    font-size: 70px;
+    top: 200px;
+    left: 10px ;
+
+    /* Animation mesoiseaux */
+
+    animation-duration: 10s;
+    animation-name: mesoiseaux;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+ }
+
+ .oiseau:nth-child(3), .oiseau:nth-child(2), .oiseau:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+
+ /* Animer les Oiseaux*/
+
+ @keyframes mesoiseaux{
+    0% {
+        top: 200px;
+        left: -10px;
+    }
+    5%{
+        top: 170PX;
+    }
+    10% {
+        top: 210px;
+    }
+    20% {
+        top: 150px;
+    }
+    30% {
+        top: 200px;
+    }
+    40% {
+        top: 140px;
+    }
+    50% {
+        top: 190px;
+    }
+    60% {
+        top:130px;
+    }
+    70% {
+        top: 200px;
+    }
+    80% {
+        top: 160px;
+    }
+    90% {
+        top: 210px;
+    }
+    100% {
+        top: 170px;
+        left: 400px;
+    }
+ }
+
+
+ 
+
+ /* Création de Nuage */
+
+ .nuage{
+     color: transparent;
+     position: absolute;
+     display: inline-block;
+     background: rgb(226, 230, 247);
+     width: 50px;
+     height: 50px;
+     border-radius: 40px;
+     top: 30px;
+     left: 50px;
+
+     /* Animation nuageblanc*/
+
+     animation-duration: 25s;
+     animation-name: nuageblanc;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+ }
+
+ /* Animer le Nuage */
+
+ @keyframes nuageblanc{
+    from {
+        top: 40px;
+        left: -50px;
+    }
+    25% {
+        top: 10px;
+    }
+    40% {
+        top: 50px;
+    }
+    to {
+        top: 20px;
+        left: 400px;
+    }
+ }
+
+ .nuage:before{
+     content: '<span>&nbsp;</span>';
+     color: transparent;
+     position: relative;
+     display: inline-block;
+     background: rgb(226, 230, 247);
+     width: 50px;
+     height: 50px;
+     border-radius: 40px;
+     top: 32px;
+     left: -15px;
+    }
+
+ .nuage:after{
+    content: '<span>&nbsp;</span>';
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    background: rgb(226, 230, 247);
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    top: -40px;
+    left: 25px;
+ }
+
+
+
+
+
+ 
+ 
